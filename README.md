@@ -80,6 +80,7 @@ This will run the streamlit app on localhost
 1. Run the app using ``` streamlit run src/app.py```
 
 2. Upload the dataset. Example dataset is given in ```data/data.csv``` 
+
     <img width=200px height=200px src="static/Vizard.png" alt="Project logo">
 
 3. Select features from the data 
