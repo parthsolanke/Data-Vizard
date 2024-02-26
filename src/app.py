@@ -33,7 +33,7 @@ def main():
             else:
                 # Choose the type of chart
                 chart_type = st.selectbox("Select the type of chart", ["Line Chart", "Bar Chart", "Scatter Plot",
-                                                                       "Bubble Chart", "Pie Chart", "Histogram",
+                                                                       "Bubble Plot", "Pie Chart", "Histogram",
                                                                        "Heatmap", "Polar Chart"])
 
                 # Generate and display the chart based on user selections
@@ -44,7 +44,6 @@ def main():
                 elif chart_type == "Scatter Plot":
                     generate_scatter_plot(df, selected_features)
                 elif chart_type == "Bubble Plot":
-                    # columns = df.columns.tolist()
                     x_feature = selected_features[0]
                     y_feature = selected_features[1]
                     size_feature = selected_features[2] 
@@ -98,6 +97,7 @@ def generate_bubble_plot(df, x_feature, y_feature, size_feature):
     ax.set_xlabel(x_feature)
     ax.set_ylabel(y_feature)
     ax.set_title('Bubble Plot')
+    st.pyplot(fig)
     
     
     
