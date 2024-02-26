@@ -24,7 +24,7 @@ def main():
             st.warning("Please select at least one feature for comparison.")
         else:
             # Choose the type of chart
-            chart_type = st.selectbox("Select the type of chart", ["Line Chart", "Bar Chart", "Scatter Plot"])
+            chart_type = st.selectbox("Select the type of chart", ["Line Chart", "Bar Chart", "Scatter Plot","Histogram","Area Chart"])
 
             # Generate and display the chart based on user selections
             if chart_type == "Line Chart":
@@ -33,6 +33,10 @@ def main():
                 generate_bar_chart(df, selected_features)
             elif chart_type == "Scatter Plot":
                 generate_scatter_plot(df, selected_features)
+            elif chart_type == "Histogram":
+                generate_histogram(df, selected_features)
+            elif chart_type == "Area Chart":
+                generate_areachart(df, selected_features)        
 
 def generate_line_chart(df, selected_features):
     plt.figure(figsize=(10, 6))
@@ -54,6 +58,17 @@ def generate_scatter_plot(df, selected_features):
     fig = px.scatter(df, x=selected_features[0], y=selected_features[1], title="Scatter Plot",
                      labels={selected_features[0]: selected_features[0], selected_features[1]: selected_features[1]})
     st.plotly_chart(fig)
+
+def generate_histogram(df,selected_feature):
+    fig=px.histogram(df,x=selected_feature[0],y=selected_feature[1],title="Histogram",labels={selected_feature[0]:selected_feature[0],selected_feature[1]:selected_feature[1]})
+    st.plotly_chart(fig)
+
+def generate_areachart(df,selected_feature):
+    fig =px.area(df,x=selected_feature[0],y=selected_feature[1],title="Area Chart",labels={selected_feature[0]:selected_feature[0],selected_feature[1]:selected_feature[1]})
+    st.plotly_chart(fig)
+
+
+
 
 if __name__ == "__main__":
     main()
