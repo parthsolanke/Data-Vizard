@@ -1,0 +1,54 @@
+# Data-Vizard
+
+#### Data visualization tool🧙‍♂️
+
+Data Visualization Tool
+This project is a data visualization tool built using Python, Streamlit, Pandas, Matplotlib, and Plotly. It allows users to upload a CSV file, select features for comparison, and choose the type of chart to generate and display based on the selected features.
+
+Features
+The tool supports the following types of charts:
+
+Line Chart
+Bar Chart
+Scatter Plot
+Bubble Plot
+Pie Chart
+Histogram
+Heatmap
+Polar Chart
+Usage
+To use the tool, run the main Python script. The main() function is the entry point of the tool.
+
+if __name__ == "__main__":
+    main()
+In the main() function, you can upload a CSV file, select features for comparison, and choose the type of chart to generate.
+
+def main():
+    st.title("Data Visualization Tool")
+    uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+    ...
+Functions
+The tool includes several functions to generate different types of charts. Each function takes a pandas DataFrame and a list of selected features as input, and generates a chart based on the selected features.
+
+For example, the generate_line_chart(df, selected_features) function generates a line chart by plotting the values of the selected features against the index of the DataFrame.
+
+def generate_line_chart(df, selected_features):
+    plt.figure(figsize=(10, 6))
+    for feature in selected_features:
+        plt.plot(df.index, df[feature], label=feature)
+    ...
+Requirements
+Python
+Streamlit
+Pandas
+Matplotlib
+Plotly
+Installation
+To install the required libraries, run the following command:
+
+pip install streamlit pandas matplotlib plotly
+Running the Tool
+To run the tool, use the following command:
+
+streamlit run main.py
+This will start the Streamlit server and open the tool in your web browser.
