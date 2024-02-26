@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import altair as alt
+import matplotlib.pyplot as plt
+import plotly.express as px
 
 def main():
     st.title("Data Visualization Tool")
@@ -34,36 +35,25 @@ def main():
                 generate_scatter_plot(df, selected_features)
 
 def generate_line_chart(df, selected_features):
-    chart = alt.Chart(df).mark_line().encode(
-        x="index",
-        y=selected_features
-    ).properties(
-        width=800,
-        height=500
-    )
-    st.altair_chart(chart, use_container_width=True)
+    plt.figure(figsize=(10, 6))
+    for feature in selected_features:
+        plt.plot(df.index, df[feature], label=feature)
+
+    plt.xlabel("Index")
+    plt.ylabel("Values")
+    plt.title("Line Chart")
+    plt.legend()
+    st.pyplot()
 
 def generate_bar_chart(df, selected_features):
-    chart = alt.Chart(df).mark_bar().encode(
-        x=alt.X("index", title="Index"),
-        y=alt.Y(selected_features, title="Values"),
-        column=alt.Column("variable", title="Features")
-    ).properties(
-        width=800,
-        height=500
-    )
-    st.altair_chart(chart, use_container_width=True)
+    fig = px.bar(df, x=df.index, y=selected_features, barmode="group")
+    fig.update_layout(title="Bar Chart", xaxis_title="Index", yaxis_title="Values")
+    st.plotly_chart(fig)
 
 def generate_scatter_plot(df, selected_features):
-    chart = alt.Chart(df).mark_circle().encode(
-        x=selected_features[0],
-        y=selected_features[1],
-        tooltip=selected_features
-    ).properties(
-        width=800,
-        height=500
-    )
-    st.altair_chart(chart, use_container_width=True)
+    fig = px.scatter(df, x=selected_features[0], y=selected_features[1], title="Scatter Plot",
+                     labels={selected_features[0]: selected_features[0], selected_features[1]: selected_features[1]})
+    st.plotly_chart(fig)
 
 if __name__ == "__main__":
     main()
