@@ -95,7 +95,6 @@ def generate_bubble_plot(df, x_feature, y_feature, size_feature):
     st.pyplot(fig)
     
     
-    
 def generate_histogram(df, selected_feature):
     plt.figure(figsize=(10, 6))
     plt.hist(df[selected_feature], bins=20, edgecolor='black')
