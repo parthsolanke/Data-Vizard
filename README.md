@@ -68,21 +68,32 @@ To get started with this project on a local machine, you'll need following prere
     pip install -r requirements.txt 
     ```
 
-### Installing
+### Running the app locally 
 
 Once the prerequisites processes are done, run the project by running the app script from the src directory
 ```
     streamlit run src/app.py
 ```
-
+This will run the streamlit app on localhost
 
 ## 🎈 Usage <a name="usage"></a>
+1. Run the app using ``` streamlit run src/app.py```
 
-Add notes about how to use the system.
+2. Upload the dataset. Example dataset is given in ```data/data.csv``` 
+    <img width=200px height=200px src="static/Vizard.png" alt="Project logo">
 
-## 🚀 Deployment <a name = "deployment"></a>
+3. Select features from the data 
 
-Add additional notes about how to deploy this on a live system.
+    <img width=200px height=200px src="static/Vizard.png" alt="Project logo">
+
+4. Select the Visualization from the given visualization charts and plots 
+
+    <img width=200px height=200px src="static/Vizard.png" alt="Project logo"></a>
+
+5. You're Done, You'll get the visualization from selected features 
+
+    <img width=200px height=200px src="static/Vizard.png" alt="Project logo"></a>
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
@@ -96,9 +107,3 @@ Add additional notes about how to deploy this on a live system.
 - [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
