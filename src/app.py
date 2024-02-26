@@ -39,12 +39,10 @@ def main():
                 generate_pie_plot(df, selected_features)
             elif chart_type == "Bubble Plot":
                 columns = df.columns.tolist()
-                x_feature = st.selectbox("Select x-axis feature", columns)
-                y_feature = st.selectbox("Select y-axis feature", columns)
-                size_feature = st.selectbox("Select size feature", columns)
-                
-                if st.button("Generate Bubble Plot"):
-                    generate_bubble_plot(df, x_feature, y_feature, size_feature)
+                x_feature = selected_features[0]
+                y_feature = selected_features[1]
+                size_feature = selected_features[2] 
+                generate_bubble_plot(df, x_feature, y_feature, size_feature)
 
             
             
