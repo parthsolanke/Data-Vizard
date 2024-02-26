@@ -32,7 +32,8 @@ Welcome to Data-Vizard, your go-to data visualization tool that empowers you to 
 
 #### Unveiling the Magic 
 - Seamless Data Upload
-With Data-Vizard, importing your data is as easy as waving a wand. Simply upload your CSV file, and let the magic begin.
+
+        With Data-Vizard, importing your data is as easy as waving a wand. Simply upload your CSV file, and let the magic begin.
 
 - Tailored Feature Comparison
 Selecting features for comparison has never been simpler. Data-Vizard empowers you to handpick the variables that matter most to you, enabling dynamic exploration of relationships within your dataset
@@ -81,30 +82,35 @@ This will run the streamlit app on localhost
 
 2. Upload the dataset. Example dataset is given in ```data/data.csv``` 
 
-    <img width=200px height=200px src="static/Vizard.png" alt="Project logo">
+    <img src="static/upload-dataset.png" alt="Project logo">
 
 3. Select features from the data 
 
-    <img width=200px height=200px src="static/Vizard.png" alt="Project logo">
+    <img src="static/select-featues.png" alt="Project logo">
 
 4. Select the Visualization from the given visualization charts and plots 
 
-    <img width=200px height=200px src="static/Vizard.png" alt="Project logo"></a>
+    <img src="static/plot-select.png" alt="Project logo"></a>
 
 5. You're Done, You'll get the visualization from selected features 
 
-    <img width=200px height=200px src="static/Vizard.png" alt="Project logo"></a>
+    <img src="static/histogram.png" alt="Project logo"></a>
+
+    <img src="static/pie-chat.png" alt="Project logo"></a>
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Streamlit](https://streamlit.io/) - Application Framework
+- [Matplotlib](https://matplotlib.org/) - Data Vizualization Library
+- [Ploty](https://plotly.com/) -  Data Vizualization Library
+- [Pandas](https://pandas.pydata.org/) - Data Manipulation Library 
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [Parth Solanke](https://github.com/parthsolanke) 
+- [Abhishek Pawar](https://github.com/abhishek-03113) 
+- [Shantanu Ekad ](https://github.com/ShantanuE7) 
+- [Raj Nangare](https://github.com/RajNangare)
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+<hr>
