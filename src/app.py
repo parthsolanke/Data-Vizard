@@ -81,13 +81,8 @@ def generate_scatter_plot(df, selected_features):
     st.plotly_chart(fig)
     
 def generate_pie_chart(df, selected_features):
-    # Extracting data for selected features
-    data = df[selected_features]
-    feature_sums = data.sum()    
-    fig, ax = plt.subplots()
-    ax.pie(feature_sums, labels=feature_sums.index, autopct='%1.1f%%', startangle=90)
-    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-    ax.set_title('Pie Plot of Selected Features')
+    fig = px.pie(df, names=selected_features, title="Pie Chart", hole=0.3)
+    st.plotly_chart(fig)
     
     
 def generate_bubble_plot(df, x_feature, y_feature, size_feature):
