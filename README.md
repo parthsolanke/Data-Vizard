@@ -31,15 +31,17 @@
 Welcome to Data-Vizard, your go-to data visualization tool that empowers you to explore and present your data with ease. Developed with Python, Streamlit, and an ensemble of powerful libraries including Pandas, Matplotlib, and Plotly, Data-Vizard is your companion in unraveling insights from your datasets.
 
 #### Unveiling the Magic 
-- Seamless Data Upload
+- Seamless Data Upload: 
 
-        With Data-Vizard, importing your data is as easy as waving a wand. Simply upload your CSV file, and let the magic begin.
+    With Data-Vizard, importing your data is as easy as waving a wand. Simply upload your CSV file, and let the magic begin.
 
-- Tailored Feature Comparison
-Selecting features for comparison has never been simpler. Data-Vizard empowers you to handpick the variables that matter most to you, enabling dynamic exploration of relationships within your dataset
+- Tailored Feature Comparison:
+
+    Selecting features for comparison has never been simpler. Data-Vizard empowers you to handpick the variables that matter most to you, enabling dynamic exploration of relationships within your dataset
 
 - Chart Diversity: 
-From the simplicity of a Pie Chart to the complexity of a Heatmap, Data-Vizard offers a diverse range of chart types to captivate your audience. Whether you're uncovering distribution patterns with a Histogram or visualizing multidimensional data with a Bubble Plot, Data-Vizard transforms your raw data into captivating visual narratives.
+
+    From the simplicity of a Pie Chart to the complexity of a Heatmap, Data-Vizard offers a diverse range of chart types to captivate your audience. Whether you're uncovering distribution patterns with a Histogram or visualizing multidimensional data with a Bubble Plot, Data-Vizard transforms your raw data into captivating visual narratives.
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
