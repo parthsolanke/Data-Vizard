@@ -74,12 +74,12 @@ To get started with this project on a local machine, you'll need following prere
 
 Once the prerequisites processes are done, run the project by running the app script from the src directory
 ```
-    streamlit run src/app.py
+    streamlit run app.py
 ```
 This will run the streamlit app on localhost
 
 ## 🎈 Usage <a name="usage"></a>
-1. Run the app using ``` streamlit run src/app.py```
+1. Run the app using ``` streamlit run app.py```
 
 2. Upload the dataset. Example dataset is given in ```data/data.csv``` 
 
